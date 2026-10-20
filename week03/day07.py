@@ -1,0 +1,16 @@
+#数据容器列表切片
+s = [4516,5,4,1,8,415613,5415,"sdeef","wdf"]
+print(s[0:5])
+s.append(188)
+print(s)
+s.insert(9,80)
+print(s)
+s.remove(80)
+print(s)
+e = s.pop(1)
+print(e)
+r = s.pop()
+print(r)
+#s.sort()
+s.reverse()
+print(s)

@@ -1,52 +1,52 @@
-# t1 = (8,1,5,651,6521,564,561,651,651,56)
-# print(t1)
-# print(type(t1))
+t1 = (8,1,5,651,6521,564,561,651,651,56)
+print(t1)
+print(type(t1))
 
-# print(t1[0])
-# print(t1[-1])
+print(t1[0])
+print(t1[-1])
 
-# print(t1[0:5:1])
-# #count(统计元素个数)
-# print(t1.count(8))
-# #index(获取检索元素位置)
-# print(t1.index(1))
+print(t1[0:5:1])
+#count(统计元素个数)
+print(t1.count(8))
+#index(获取检索元素位置)
+print(t1.index(1))
 
-# t2 = (5,)
-# print(t2)
-# print(type(t2))
-# #元组的组包解包
-# t1 = (2,3,5,7,9,10)
-# t2 = 5,7,9,10
+t2 = (5,)
+print(t2)
+print(type(t2))
+#元组的组包解包
+t1 = (2,3,5,7,9,10)
+t2 = 5,7,9,10
 
-# a,b,c,d,e,f = t1
-# x,*y,z = t2
-# s,*o = t2
-# *o,e = t2
+a,b,c,d,e,f = t1
+x,*y,z = t2
+s,*o = t2
+*o,e = t2
 
-# first,second,*other,last = t1
-# print(first,second)
-# print(other)
-# print(last)
+first,second,*other,last = t1
+print(first,second)
+print(other)
+print(last)
 
-# *other,last2,last1 = t1
-# print(other)
-# print(last2)
-# print(last1)
+*other,last2,last1 = t1
+print(other)
+print(last2)
+print(last1)
 
-# a = 10
-# b = 20
-# a,b = b,a
-# print(a)
-# print(b)
+a = 10
+b = 20
+a,b = b,a
+print(a)
+print(b)
 
-# x = 100
-# y = 200
-# z = 300
+x = 100
+y = 200
+z = 300
 
-# z,x,y = x,y,z
-# print(x)
-# print(y)
-# print(z)
+z,x,y = x,y,z
+print(x)
+print(y)
+print(z)
 
 students = (
     ("S001","王林",85,92,78),

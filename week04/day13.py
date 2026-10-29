@@ -97,7 +97,7 @@ while True:
                 print("学生已录入请重新输入~")        
             else:
                 students_infomation[students_name] = {"chinese":students_chinese,"math":students_math,"english":students_english}
-                print(f"添加【students_name】成功")
+                print(f"添加【{students_name}】成功")
         case "2":#修改学生信息
             students_name = input("请输入要修改的学生姓名：")
             if students_name not in students_infomation:
@@ -106,7 +106,7 @@ while True:
             students_chinese = int(input("请输入学生语文成绩："))
             students_math = int(input("请输入学生数学成绩："))
             students_english = int(input("请输入学生英语成绩："))
-            students_infomation[students_name] = {"chinese":students_chinese,"math":students_mach,"english":students_english}
+            students_infomation[students_name] = {"chinese":students_chinese,"math":students_math,"english":students_english}
 
         case "3":#删除学生信息
             students_name = input("请输入要删除的学生姓名：")
@@ -120,7 +120,7 @@ while True:
         case "4":#查询学生信息
             for students_name in students_infomation.keys():
                 students_info = students_infomation[students_name]
-                print(f"学生姓名：{students_name},语文成绩：{students_info["chinese"]},数学成绩：{students_info["math"]},英语成绩：{students_info["english"]}")
+                print(f"学生姓名：{students_name},语文成绩：{students_info["students_chinese"]},数学成绩：{students_info["students_math"]},英语成绩：{students_info["students_english"]}")
                   
         case "5":#遍历所有学生信息
             if not students_infomation:
@@ -145,7 +145,7 @@ while True:
                 bottom = min(sc)
                 tops = [n for n,i in students_infomation.items() if i[sjt] == top]
                 bottoms = [n for n,i in students_infomation.items() if i[sjt] == bottom]
-                print(f"{sjt}最高分学生：{'、'.join(tops)}:最低分学生;{'、'.join(bottoms)})")
+                print(f"{sjt}最高分学生：{'、'.join(tops)}:最低分学生;{'、'.join(bottoms)}")
         case "7":#退出教务系统
             print("已退出教务管理系统")
             break

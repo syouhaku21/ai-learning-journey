@@ -134,9 +134,9 @@ while True:
             if not students_infomation:
                 print("暂无学生信息")
                 continue
-            chinese_list = [info["students_chinese"] for info in students_infomation.values()]
-            math_list = [info["students_math"] for info in students_infomation.values()]
-            english_list = [info["students_english"] for info in students_infomation.values()]
+            chinese_list = [info["chinese"] for info in students_infomation.values()]
+            math_list = [info["math"] for info in students_infomation.values()]
+            english_list = [info["english"] for info in students_infomation.values()]
             print(f"语文：最高 {max(chinese_list)}，最低 {min(chinese_list)}，平均 {sum(chinese_list)/len(chinese_list):.1f}")
             print(f"数学：最高 {max(math_list)}，最低 {min(math_list)}，平均 {sum(math_list)/len(math_list):.1f}")
             print(f"英语：最高 {max(english_list)}，最低 {min(english_list)}，平均 {sum(english_list)/len(english_list):.1f}")

@@ -1,14 +1,14 @@
-#不定长位置传参数
-def calc_data(*args):
-    min_data = min(args)
-    max_data = max(args)
-    avg_data = sum(args) / len(args)
-    return min_data,max_data,round(avg_data,1)
+# #不定长位置传参数
+# def calc_data(*args):
+#     min_data = min(args)
+#     max_data = max(args)
+#     avg_data = sum(args) / len(args)
+#     return min_data,max_data,round(avg_data,1)
 
-print(calc_data(2,7,9,10,45))
-print(calc_data(2,7,9,10,45,73,37.93,92,111,222))
+# print(calc_data(2,7,9,10,45))
+# print(calc_data(2,7,9,10,45,73,37.93,92,111,222))
 
-不定长关键字传参数
+#不定长关键字传参数
 
 def calc_data(*args,**kwargs):
     '''
@@ -31,5 +31,5 @@ def calc_data(*args,**kwargs):
 
     return min_data,max_data,avg_data
 
-# print(calc_data(2,7,9,10,45,round = 3,print = True))
+print(calc_data(2,7,9,10,45,round = 3,print = True))
 print(calc_data(2,7,9,10,45,73,37.93,92,111,222,round = 3,print = False))

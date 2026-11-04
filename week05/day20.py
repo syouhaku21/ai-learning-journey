@@ -2,7 +2,7 @@
 '''
 定义一个函数，用于根据传入的一批商品信息(商品名，价格，数量),优惠(优惠券，积分抵扣),运费信息计算订单的总金额函数
 '''
-def calc_order_cost(*args,coupon,score,express):
+def calc_order_cost(*args,coupon=0,score=0,express=0):
     """
     根据传入的一批商品信息(商品名，价格，数量),优惠(优惠券，积分抵扣),运费信息计算订单的总金额
     :param args:商品信息(商品名，价格，数量)---> 如:("鼠标"，188,2)
@@ -29,3 +29,19 @@ def calc_order_cost(*args,coupon,score,express):
 
 total = calc_order_cost(("鼠标",188,2),("键盘",388,1),("手机",6999,1),coupon=10,score=4000,express=9.9)            
 print(total)
+
+#数据类型
+a2: int = 596
+score2: float = 98.8
+hobby2: str = "Python"
+flag2: bool = True
+pic2: None = None
+
+names2: list[str|int] = ["A","B","C"]
+phone2: set[str] = {"13377310706","13377300706","13377000706"}
+options2: dict[str,int] = {"count":2,"total":10}
+goods2: tuple[str,int,int] = ("手机",6999,1)
+
+names2.append(100)
+names2.append("S")
+
